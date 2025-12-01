@@ -10,13 +10,10 @@
 ## Overview
 This repository provides an end‑to‑end pipeline to:
 - Ingest head‑and‑neck DICOM or NRRD/NIfTI, preprocess, and run nnU‑Net v1 segmentation of lymph nodes
-- Classify per‑node ENE likelihood and node positivity with AI‑ENE (TensorFlow/Keras)
-- Produce a timestamped CSV of predictions and metrics (volumes, optional short/long axes)
+- Classify per‑node ENE likelihood and node positivity with AI‑ENE.
+- Produce a timestamped CSV of predictions and metrics.
 
-Structure (run all commands from the `AI_ENE` folder):
-- `nnunet_segmentation`: DICOM/NRRD/NIfTI → preprocessing → nnU‑Net inference
-- `ENE_inference`: ENE inference from CT + segmentation
-- `run_e2e.py`: wrapper that orchestrates the full flow
+
 
 ## Environment Setup
 
