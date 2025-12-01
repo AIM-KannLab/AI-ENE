@@ -1,0 +1,39 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Project outputs and intermediates (generated at runtime)
+output_dir/
+**/output_*/
+**/label_croptop_*/
+**/prediction_list/
+**/resampled_*/
+**/image_crop/
+**/split_nodes/
+
+# Arrays and temp data
+*.npy
+
+# Keep model checkpoints under ene_model/
+# (no ignore rule here to ensure default model remains tracked)

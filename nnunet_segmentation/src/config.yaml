@@ -1,0 +1,23 @@
+data:
+  image_crop_size:
+  - 160
+  - 160
+  - 64
+  input_data_format: dicom
+inference:
+  crop_size:
+  - 160
+  - 160
+  - 64
+  folds:
+  - 0
+  model_variant: 3d_fullres
+  overwrite_existing: true
+  step_size: 0.5
+  task_name: Task501_ENE
+  tta: true
+path:
+  input_data_dir: null
+  nnUNet_dir: null
+  project_dir: .
+  registration_template_path: null

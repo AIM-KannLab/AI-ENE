@@ -1,0 +1,34 @@
+name: ai-ene
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy=1.23.5
+  - scipy=1.9.3
+  - pandas=1.5.3
+  - scikit-learn=1.6.1
+  - scikit-image=0.21.0
+  - simpleitk=2.3.1
+  - pip:
+      - nnunet==1.7.0
+      - batchgenerators==0.25.1
+      - nibabel>=5.2.1
+      - medpy==0.5.2
+      - tqdm==4.67.1
+      - imageio>=2.35.1
+      - tifffile>=2023.7.10
+      - PyWavelets==1.4.1
+      - lazy_loader>=0.4
+      - future>=1.0.0
+      - unittest2==1.1.0
+      - opencv-python-headless==4.9.0.80
+      - pydicom>=2.4.4
+      - dicom2nifti==2.6.0
+      - python-gdcm==3.2.2
+      - feret>=0.4.0
+      - tensorflow==2.11.0
+      - keras==2.11.0
+      - h5py==3.8.0
+

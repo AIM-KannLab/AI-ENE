@@ -1,0 +1,34 @@
+# VCS
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.whl
+build/
+dist/
+.venv/
+venv/
+
+# Project outputs and large assets (mounted at runtime)
+output/**
+nnunet_segmentation/nnUNet_output/**
+nnunet_segmentation/dicom_data/**
+nnunet_segmentation/main_data/raw_nrrd_image/**
+nnunet_segmentation/main_data/respace_image/**
+nnunet_segmentation/main_data/crop_image/**
+nnunet_segmentation/main_data/reg_img_template/**
+nnunet_segmentation/nnUNet_trained_model/**
+ENE_inference/ene_model/**
+
+# Node/editor/OS cruft
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+
+

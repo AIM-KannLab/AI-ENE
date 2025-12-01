@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# nnU-Net outputs and data
+nnUNet_output/
+dicom_data/
+runs/
+runs11/
+
+# Keep only the registration template under main_data
+main_data/*
+!main_data/reg_img_template/
+!main_data/reg_img_template/**
+
+# Weights (do not commit large binaries)
+nnUNet_trained_model/
+
+# NIfTI/NRRD binaries (but allow the registration template)
+*.nii.gz
+*.nrrd
+!main_data/reg_img_template/*.nii.gz
+!main_data/reg_img_template/*.nrrd

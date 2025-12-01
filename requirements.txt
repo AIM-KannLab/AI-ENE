@@ -1,0 +1,35 @@
+# Base Python packages for AI-ENE end-to-end (pip install -r requirements.txt)
+
+# Core numerics
+numpy==1.24.3
+scipy==1.10.1
+pandas==1.5.3
+scikit-learn==1.6.1
+pyyaml>=6.0
+
+# Imaging
+SimpleITK==2.3.1
+nibabel>=5.2.1
+pydicom>=2.4.4
+imageio>=2.35.1
+tifffile>=2023.7.10
+PyWavelets==1.4.1
+scikit-image==0.21.0
+opencv-python-headless==4.9.0.80
+
+# Medical DL segmentation (nnU-Net v1 stack)
+nnunet==1.7.0
+batchgenerators==0.25.1
+medpy==0.5.2
+unittest2==1.1.0
+lazy_loader>=0.4
+future>=1.0.0
+tqdm==4.67.1
+dicom2nifti==2.6.0
+python-gdcm==3.2.2
+
+# AI-ENE classification (TensorFlow/Keras)
+# TensorFlow/Keras are installed in the Docker image for GPU usage
+h5py==3.8.0
+feret>=0.4.0
+

@@ -1,0 +1,59 @@
+# Ignore generated outputs and intermediates
+output/
+!output/.gitkeep
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.env
+.venv
+venv/
+env/
+
+# Logs / caches
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Archives / large blobs
+*.zip
+*.tar.gz
+*.7z
+
+# Model file (download via README link)
+ENE_inference/ene_model/**
+!ENE_inference/ene_model/**/.gitkeep
+
+# nnUNet raw/prepared data
+nnunet_segmentation/nnUNet_output/nnUNet_raw_data/**
+!nnunet_segmentation/nnUNet_output/nnUNet_raw_data/**/.gitkeep
+
+# Intermediate images
+nnunet_segmentation/main_data/raw_nrrd_image/**
+!nnunet_segmentation/main_data/raw_nrrd_image/**/.gitkeep
+nnunet_segmentation/main_data/respace_image/**
+!nnunet_segmentation/main_data/respace_image/**/.gitkeep
+nnunet_segmentation/main_data/crop_image/**
+!nnunet_segmentation/main_data/crop_image/**/.gitkeep
+
+# nnUNet trained model binaries (download via README link)
+nnunet_segmentation/nnUNet_trained_model/nnUNet/Task501_ENE/**
+!nnunet_segmentation/nnUNet_trained_model/nnUNet/Task501_ENE/**/.gitkeep
+
+# DICOM inputs (keep folder, ignore contents)
+nnunet_segmentation/dicom_data/**
+!nnunet_segmentation/dicom_data/**/.gitkeep
+
+# Registration template (keep folder, ignore contents)
+nnunet_segmentation/main_data/reg_img_template/**
+!nnunet_segmentation/main_data/reg_img_template/**/.gitkeep
+ENE_inference/README.md
+nnunet_segmentation/README.md
